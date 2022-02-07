@@ -3,8 +3,9 @@ const winners = [];
 
 function game(){
     for(let i= 1; i <=5; i++){
-        playRound();
+        playRound(i);
     }
+    document.querySelector('button').textContent= "Start game"
     logwins();
 }
 
@@ -77,5 +78,3 @@ function playRound(Round) {
         console.log(winner, "Won")
         console.log("----------------");
     }
-
-  game();
